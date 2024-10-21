@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'LemonMilk';
+      src: url('./Fonts/lemon_milk/LEMONMILK-Medium.woff2') format('woff2'),
+           url('./Fonts/lemon_milk/LEMONMILK-Medium.woff') format('woff');
+    }
+
+    body, html {
+      margin: 0; /* Remove margin */
+      padding: 0;
+      height: 100%; /* Ensure body and html take up full height */
+      box-sizing: border-box;
+      font-family: 'LemonMilk', sans-serif; /* Set the custom font for the body */
+      background-image: url('./Pages/Games Made By Alvin/Images/Background.jpg'); /* Add the path to your background image */
+      background-size: cover; /* Make sure the background image covers the entire viewport */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      background-color: #db3434; /* Set your desired background color */
+      color: #ffffff; /* Set the text color */
+      padding: 10px; /* Add some padding for better appearance */
+    }
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+      color: #ffffff; /* Set the text color */
+      padding: 10px; /* Add some padding for better appearance */
+      font-size: 1vw;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .image-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; /* Add position relative for absolute positioning of button */
+    }
+
+    .image-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0; /* Remove margins on images */
+    }
+
+    .image-item button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column; /* Adjusted to column direction */
+      align-items: center;
+      justify-content: center;
+      font-family: 'LemonMilk';
+    }
+
+    .image-item button h2 {
+      margin: 0;
+      font-size: 1.8vw;
+    }
+
+    .image-item button h3 {
+      margin: 10px 0 0; /* Adjusted margin for better spacing */
+      font-size: 0.8vw; /* Adjusted font size */
+    }
+
+    .image-item:hover button {
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(169, 169, 169, 0.5); /* Grey glow on hover */
+    }
+
+    /* Different background colors for each button */
+    .image-item:nth-child(1) button {
+      background-color: #fd5591; /* Cube Turn */
+    }
+
+    .image-item:nth-child(2) button {
+      background-color: #030710; /* In To Space */
+    }
+
+    .image-item:nth-child(3) button {
+      background-color: #8fe5fe; /* Save The Sea Turtles */
+    }
+
+    .image-item:nth-child(4) button {
+      background-color: #5e5e5e; /* Self-Destruction */
+    }
+
+    .image-item:nth-child(5) button {
+      background-color: #131313; /*  spAce */
+    }
+
+    .image-item:nth-child(6) button {
+      background-color: #222222; /* Coming Soon */
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        margin: 0; /* Remove margin */
+      }
+      .image-item button h2 {
+    font-size: 450%; /* Adjusted font size for mobile view */
+  }
+
+  .image-item button h3 {
+    font-size: 200%; /* Adjusted font size for mobile view */
+  }
+
+  .image-item button {
+    padding: 5%; /* Increase padding for better spacing on mobile */
+
+    width: 100%;
+    height: 100%;
+
+  }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+        gap: 0; /* Remove gap on mobile devices */
+      }
+
+      .image-item {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+<h1>Games Made By Alvin</h1>
+
+<div class="image-grid">
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/Cube Turn.jpg" alt="Image 1">
+    <a href="./Cube Turn.html">
+    <button> 
+        <h2>Cube Turn</h2>
+        
+        <h3> Cube Turn invites players to excersize their reflexes and cognitives skills. A brand new refreshing take on the puzzle game genre. One that will have you coming back again and again trying to beat your highscore. Cube Turn is a puzzle game involving...</h3>
+    </button>
+    </a>
+  </div>
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/In To Space.jpg" alt="In To Space">
+    <a href="./In To Space.html">
+    <button>
+        <h2>In To Space</h2>
+        
+        <h3> In To Space is a 2D endless runner game where the objective is to maneuver your spaceship through space while dodging asteroids, missiles, and other spaceships. The game draws...</h3>
+    </button>
+    </a>
+  </div>
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/Save The Sea Turtles.jpg" alt="Save The Sea Turtles">
+    <a href="./Save The Sea Turtles.html">
+    <button>
+        <h2>Save The Sea Turtles</h2>
+        
+        <h3> Save The Sea Turtles is an endless survival first-person shooter game. In the game, you are tasked with defending sea turtles and their eggs. The player is equipped with a bubble gun. Enemies emerge from the fog with the mission of reaching the turtles and their eggs. The game features a power-up system to aid the player in surviving as long as possible. The game was created...</h3>
+    </button>
+  </a>
+  </div>
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/Self-Destruct.jpg" alt="Self-Destruct">
+    <a href="./Self-Destruct.html">
+    <button>
+        <h2>Self-Destruct</h2>
+        
+        <h3> Self-Destruct is an endless runner game. The gameplay is simple: the user has access to two controls, "left" and "right". The character must keep moving in either of these directions, with the objective being...</h3>
+    </button>
+    </a>
+  </div>
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/spACE.jpg" alt="spAce">
+    <a href="./spAce.html">
+    <button>
+        <h2>spAce</h2>
+        
+        <h3> spAce is a 2D platformer set in space. The player must traverse the various moons in order to find Special Agent Ace. The agent has gone rogue and has taken one of the space military-grade weapons, with...</h3>
+    </button>
+  </a>
+  </div>
+  <div class="image-item">
+    <img src="./Pages/Games Made By Alvin/Images/Coming Soon.jpg" alt="Image 6">
+    <button><h2>Coming Soon</h2></button>
+  </div>
+</div>
+
+</body>
+</html>

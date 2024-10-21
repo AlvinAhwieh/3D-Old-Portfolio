@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/nipplejs@0.10.0/dist/nipplejs.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="./Sprites/Favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./Sprites/Favicon.png" type="image/x-icon">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alvin's Portfolio</title>
+		<style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+			
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+		}
+		/* Style for the joystick container */
+		#joystick-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 33.33vh; /* Cover bottom third of the screen */
+	  z-index: 3;
+    }
+
+#joystick {
+  width: 100%;
+  height: 100%;
+}
+
+		</style>
+	</head>
+	<body>
+		<div id="mobileInterface" class="noSelect">
+			<div id="jumpButton">
+			<img id="TapTheScreen" src="./Sprites/Tap The Screen.png" alt="Tap The Screen">
+			<a href="https://github.com/AlvinBrunel/Alvins-Repository" id = buttonOpenLink target="_blank">
+			<button id="buttonOpen" background-image="./Sprites/Open Contact Information Icon.png">
+
+				</button>
+			</a>
+			<img id ="PopUpPhoneFrame" src="./Sprites/Phone Frame.png" alt="Pop Up Phone Frame">
+			<img id ="PopUp" src="" alt="Pop Up">
+
+			<video autoplay loop muted id="ProjectPopUpBox" >
+				<source id="ProjectPopUp"  src="" type="video/mp4">
+				</video>
+
+			</div>
+		</div>
+
+
+		  <img id="FocusBackground">
+		  <img id="LoadingScreenBackground">
+		  <img id="LoadingScreenRoom" src="./Loading Screen/Phone Dark.png">
+		  <LoadingScreenHeading id = "LoadingScreenHeading">Portfolio<br>Loading</LoadingScreenHeading>
+		  <LoadingScreenSubHeading id = "LoadingScreenSubHeading">Rooms Loaded: </LoadingScreenSubHeading>
+		  <LoadingScreenPhoneText id = "RoomsLoadedText">
+			starting room [ ] 
+			<br><br>
+			hobbies room [ ] 
+			<br><br>
+			skillsets room [ ] 
+			<br><br>
+			projects room [ ] 
+			<br><br>
+			contact room [ ] 
+		
+		
+		
+		</LoadingScreenPhoneText>
+
+		  <div id = "LoadingScreenProgress">0</div>
+		  <div id="joystick-container">
+			<div id="joystick"></div>
+		  </div>
+		<script type="module" src="./main.js"></script>
+		
+		<script>
+			// Check if the device has touchscreen support	 
+			function isTouchDevice() {
+				return (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+			}
+		
+			// Function to disable the joystick
+			function disableJoystick() {
+				var joystickContainer = document.getElementById('joystick-container');
+				joystickContainer.style.display = 'none'; // Hide the joystick container
+			}
+		
+			// Function to enable the joystick
+			function enableJoystick() {
+				var joystickContainer = document.getElementById('joystick-container');
+				joystickContainer.style.display = 'block'; // Show the joystick container
+			}
+		
+			// Check if the device is not a touchscreen, then disable the joystick
+			if (!isTouchDevice()) {
+				disableJoystick();
+			}
+		</script>
+	</body>
+</html>

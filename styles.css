@@ -1,0 +1,266 @@
+@font-face {
+    src: url(./Fonts/lemon_milk/LEMONMILK-Medium.otf);
+    font-family: LemonMilk;
+  }
+@font-face {
+src: url(./Fonts/terminal-cufonfonts/Terminal.ttf);
+font-family: Terminal;
+}
+#PopUp
+{
+    position:absolute;
+    top:-20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 60%;
+    max-width: 90%;
+    opacity: 0;
+    
+
+
+}
+#PopUpPhoneFrame
+{
+    position:absolute;
+    top:-20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 0;
+}
+#TapTheScreen
+{
+    position:absolute;
+    top:-20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 8%;
+    max-width: 25%;
+    opacity: 0;
+
+    z-index:1;
+    color: rgba(255, 255, 255, 0.205);
+}
+#buttonOpen
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -10%;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    max-width: 20vh;
+    max-height: auto;
+    opacity: 0;
+    z-index: 2;
+    background-color: transparent; /* Set background color to transparent */
+    background-image: url('./Sprites/Open Contact Information Icon.png');
+    background-size: contain; /* Adjust this property to 'cover' if you want the image to cover the entire container */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 0;
+}
+
+#buttonOpenImage
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:-10%;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 8%;
+    max-width: 12%;
+    opacity: 0;
+
+
+
+    z-index:1;
+}
+#LoadingScreenRoom
+{
+
+    position:absolute;
+    top:-20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 1;
+}
+/* Default styles */
+#LoadingScreenIcon {
+    position: fixed;
+    bottom: -107.5vh;
+    left: -77.5%;
+    width: 15%;
+    height: 15%;
+    opacity: 1;
+}
+
+#LoadingScreenProgress {
+    font-family: Terminal;
+    font-size: 3.5vh;
+
+    
+    position:absolute;
+    top:62.5vh;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 1;
+    text-align: center;
+    color: white;
+}
+LoadingScreenHeading
+{
+    font-family: Terminal;
+    font-size: 3.5vh;
+
+    
+    position:absolute;
+    top:-5%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 1;
+    text-align: center;
+    color: white;
+}
+LoadingScreenSubHeading
+{
+    font-family: Terminal;
+    font-size: 2.25vh;
+
+    
+    position:absolute;
+    top:24%;
+    left:-5vw;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 1;
+    text-align: center;
+    color: white;
+}
+LoadingScreenPhoneText {
+    font-family: Terminal;
+    font-size: 2.25vh;
+    position: absolute;
+    top: 47.5%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    max-height: 68%;
+    max-width: 90%;
+    opacity: 1;
+    text-align: left;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+video
+{
+    position:absolute;
+    top:-20%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: auto;
+    height: auto;
+
+    max-height: 60.6%;
+    max-width: 90%
+
+}
+#ProjectPopUp
+{
+    max-height: 0%;
+    max-width: 0%;
+}
+#LoadingScreenBackground
+{
+    margin: 0;
+    padding: 0;
+
+    width: 120vw;
+    height: 120vh;
+    position: fixed;
+    left: -10vw;
+    top: -10vh;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1);
+}
+#FocusBackground {
+    margin: 0;
+    padding: 0;
+
+    width: 120vw;
+    height: 120vh;
+    position: fixed;
+    left: -10vw;
+    top: -10vh;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px); /* Adjust the blur radius as needed */
+    opacity: 0; /* Adjust opacity as needed */
+}
+
+

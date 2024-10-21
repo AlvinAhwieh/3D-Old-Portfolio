@@ -1,0 +1,35 @@
+@font-face {
+  src: url(./Fonts/lemon_milk/LEMONMILK-Medium.otf);
+  font-family: LemonMilk;
+}
+
+section,h1 {
+  padding: 0 1em;
+  vertical-align: middle;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 4vw;
+  font: LemonMilk;
+  
+}
+
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,33vw);  /* 3 columns */
+  grid-template-rows: repeat(2,50vh); /* 3 rows  */
+  grid-gap:22.5vw 1vh; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+
+
+  justify-content: center;
+}
+
+.Preview{
+  width: 100vw;
+  object-fit: cover;
+
+}
+img {
+  width: 100%;
+}

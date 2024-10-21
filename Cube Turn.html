@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'LemonMilk';
+      src: url('./Fonts/lemon_milk/LEMONMILK-Medium.woff2') format('woff2'),
+           url('./Fonts/lemon_milk/LEMONMILK-Medium.woff') format('woff');
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      box-sizing: border-box;
+      font-family: 'LemonMilk', sans-serif;
+      background-image: url('./Pages/Games Made By Alvin/Images/Background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      background-color: #fd5591;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 40vw;
+    }
+
+    h2 {
+      max-width: 40vw; /* Set the max-width to match the width of the image */
+  margin: 0 auto; /* Center the h2 text horizontally */
+  padding: 10px; /* Adjust the padding as needed */
+  font-size: 1.1vw;
+    }
+
+    /* Add styles for the back to menu button */
+    .back-to-menu {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fd5591;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        margin: 0;
+
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .back-to-menu {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+      }
+
+      h2 {
+        padding: 5vw; /* Adjust the padding for mobile view */
+
+        max-width: 100vw; /* Set the max-width to match the width of the image */
+        margin: 0 auto; /* Center the h2 text horizontally */
+        font-size: 5vw;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+  <h1>Cube Turn</h1>
+  <img src="./Pages/Cube Turn/Cube Turn Screenshot.png" alt="Screenshot">
+  <h2>Cube Turn invites players to excersize their reflexes and cognitives skills. A brand new refreshing take on the puzzle game genre. One that will have you coming back again and again trying to beat your highscore. 
+    <br><br>
+    Cube Turn is a puzzle game involving a cube with 6 sides as well as some tiles on the floor. The tiles on the floor change colour depending on the colours on the side of the cube. The Player has to match the colours on the side of the cube to the ones on the floor, with a new colour appearing after some time. If the player fails to keep up or falls off the side then the player dies and they are given a score.
+    <br><br>
+    Click <a href="https://github.com/AlvinBrunel/Cube-Turn" target="_blank">here</a> to look through the Cube Turn game files and/or download the game. </h2>
+  <a href="./Games Made By Alvin.html">
+    <button class="back-to-menu" onclick="goBack()">Back to Menu</button>
+  </a>
+
+</body>
+</html>

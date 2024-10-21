@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: 'LemonMilk';
+      src: url('./Fonts/lemon_milk/LEMONMILK-Medium.otf') format('otf');
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'LemonMilk', sans-serif;
+      background-image: url('./Pages/Games Made By Alvin/Images/Background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative; /* Added */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      background-color: #db3434;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    .button-container {
+      text-align: center;
+      position: absolute; /* Added */
+      top: 40%; /* Added */
+      left: 50%; /* Added */
+      transform: translate(-50%, -50%); /* Added */
+    }
+
+    .button {
+      display: block;
+      width: 50vw;
+      height: 10vh;
+      margin: 10px auto;
+      color: #ffffff;
+      border: none;
+      border-radius: 10vw;
+      cursor: pointer;
+      font-size: 4vh;
+      text-decoration: none;
+      line-height: 10vh; /* Align text vertically */
+    }
+
+    .button:hover {
+      text-decoration: none;
+    }
+
+    /* Different background colors for each button */
+    .button:nth-child(1) {
+      background-color: #3498db;
+    }
+
+    .button:nth-child(2) {
+      background-color: #000000;
+    }
+
+    .button:nth-child(3) {
+      background-color: #ff0000;
+    }
+
+    /* Remove padding specifically for anchor tags */
+    .button a {
+      display: inline-block;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+    
+<h1>Contact Information</h1>
+
+<div class="button-container">
+  <a href="https://www.linkedin.com/in/alvin-ahwieh-a685012a6/" target="_blank" class="button">LinkedIn</a>
+  <a href="https://github.com/AlvinBrunel" target="_blank" class="button">GitHub</a>
+  <button id="copyButton" class="button">Gmail</button>
+</div>
+
+<script>
+document.getElementById("copyButton").addEventListener("click", function() {
+  var textToCopy = "alvinahwieh@gmail.com";
+  navigator.clipboard.writeText(textToCopy).then(function() {
+    console.log("Text copied to clipboard");
+    document.getElementById("copyButton").textContent = "Email copied!";
+    document.getElementById("copyButton").style.borderColor = "#ff0000";
+    document.getElementById("copyButton").style.border = "5px solid #ff0000"; 
+    document.getElementById("copyButton").style.backgroundColor = "#ffffff";
+    document.getElementById("copyButton").style.color = "#ff0000";
+    document.getElementById("copyButton").style.borderRadius = "10vw"; // Added border radius
+
+  }, function(err) {
+    console.error("Unable to copy text: ", err);
+  });
+});
+</script>
+
+</body>
+</html>

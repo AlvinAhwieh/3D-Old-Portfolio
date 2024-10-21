@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Sprites/Favicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'LemonMilk';
+      src: url('./Fonts/lemon_milk/LEMONMILK-Medium.woff2') format('woff2'),
+           url('./Fonts/lemon_milk/LEMONMILK-Medium.woff') format('woff');
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      box-sizing: border-box;
+      font-family: 'LemonMilk', sans-serif;
+      background-image: url('./Pages/Games Made By Alvin/Images/Background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      background-color: #d10b0b;
+      color: #000000;
+      padding: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 40vw;
+    }
+
+    h2 {
+      max-width: 40vw; /* Set the max-width to match the width of the image */
+  margin: 0 auto; /* Center the h2 text horizontally */
+  padding: 10px; /* Adjust the padding as needed */
+    }
+
+    /* Add styles for the back to menu button */
+    .back-to-menu {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #d10b0b;
+      color: #000000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        margin: 0;
+
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .back-to-menu {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+      }
+
+      h2 {
+        padding: 5vw; /* Adjust the padding for mobile view */
+
+        max-width: 100vw; /* Set the max-width to match the width of the image */
+        margin: 0 auto; /* Center the h2 text horizontally */
+      }
+    }
+  </style>
+</head>
+<body>
+    
+  <h1>Self-Destruct</h1>
+  <img src="./Pages/Self-Destruct/Self-Destruct Screenshot.jpg" alt="Screenshot">
+  <h2>
+    Self-Destruct is an endless runner game. The gameplay is simple: the user has access to two controls, "left" and "right". The character must keep moving in either of these directions, with the objective being to dodge the falling debris.
+    <br><br>
+    Click <a href="https://github.com/AlvinBrunel/Self-Destruct" target="_blank">here</a> to browse through the Self-Destruct game files and/or download the game. </h2>
+  <a href="./Games Made By Alvin.html">
+    <button class="back-to-menu" onclick="goBack()">Back to Menu</button>
+  </a>
+
+</body>
+</html>
